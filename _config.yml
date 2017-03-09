@@ -1,0 +1,16 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Slalom Stopwatch
+email: bleader@ratonland.org
+description: Slalom wireless Stopwatch project
+baseurl: "/slalom-stopwatch" # the subpath of your site, e.g. /blog
+url: "http://bleader.github.com/"
+twitter_username: BleaderRaton
+github_username: bleader
+
+# Build settings
+markdown: kramdown
+theme: minima

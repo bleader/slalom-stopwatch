@@ -1,0 +1,34 @@
+   <div class="sharing">
+     <a href="https://twitter.com/share?url={{ site.url}}{{ page.url }}">
+       <img width="24" height="24" src="{{site.baseurl}}/static/img/twitter_32.png">
+     </a>
+     <a href="http://www.facebook.com/sharer.php?u={{ site.url}}{{ page.url }}">
+       <img width="24" height="24" src="{{site.baseurl}}/static/img/facebook_32.png">
+     </a>
+     <a href="https://plus.google.com/share?url={{ site.url}}{{ page.url }}">
+       <img width="24" height="24" src="{{site.baseurl}}/static/img/gplus_32.png">
+     </a>
+     <a href="http://www.reddit.com/submit?url={{ site.url}}{{ page.url }}">
+       <img width="24" height="24" src="{{site.baseurl}}/static/img/reddit_32.png" alt="submit to reddit" border="0" />
+     </a>
+   </div>
+{% if page.comments %}
+    {% if site.disqus_url %}
+    <!-- disqus.com javascript include code. -->
+    <div class="post-area post comment">
+        <div id="disqus_thread"></div>
+    </div>
+	<script>
+		var disqus_config = function () {
+			this.page.url = "{{ site.disqus_url }}{{ page.url }}"; 
+			this.page.identifier = "{{ page.id }}"; 
+		};
+		(function() {
+			var d = document, s = d.createElement('script');
+			s.src = '//{{ site.disqus_shortname }}.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	{% endif %}
+{% endif %}
