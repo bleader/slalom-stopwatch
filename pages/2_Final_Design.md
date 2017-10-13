@@ -2,7 +2,7 @@
 layout: page
 title: Final Design
 permalink: /final-design/
-comments: true
+comments: false
 ---
 
 * content

@@ -2,7 +2,7 @@
 layout: page
 title: Original Design
 permalink: /design/
-comments: true
+comments: false
 ---
 
 * content
