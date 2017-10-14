@@ -37,6 +37,7 @@ Unfortunately for me, that wasn't actually working, because my device is working
 over *SPI* and the *SPI* init was actually broken in the HAL by a previous
 adding *i²c* support. So after [adding back the missing
 part](https://github.com/nkolban/esp32-snippets/commit/6caf622543d29e72b1bb6b74dffaabca712b32a3)
+it worked like a charm with the code I was trying.
 
 Before understanding that this was the issue I spent quite a lot of time trying
 to test *i²c*, other GPIO pins for driving the *SPI*. I even built other
