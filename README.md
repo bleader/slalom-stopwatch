@@ -6,4 +6,4 @@ project, each one will be in its own branch.
 
 * start: start switch code
 * stop: stop switch code, which will also be the wifi AP, and have the display
-* gh-pages: the site at [http://bleader.github.io/slalom-stopwatch/]
+* gh-pages: the site at http://bleader.github.io/slalom-stopwatch/
